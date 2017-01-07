@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <title>Session4 Assignment1</title>
+        <style>
+            .bubble{
+  position: relative;
+   width:110px;
+   height:80px;
+    background-color: skyblue;
+    border-radius: 5px;
+    top:20px;
+    left:20px;
+  
+}
+
+.bubble::before {
+    background-color: skyblue;
+    content: "";
+    display: block;
+    height: 19px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+.me::before {
+ 
+    left: -9px;           
+}
+        </style>
+    </head>
+    <body>
+        <div class="bubble me"></div>
+    </body>
+</html>
+
